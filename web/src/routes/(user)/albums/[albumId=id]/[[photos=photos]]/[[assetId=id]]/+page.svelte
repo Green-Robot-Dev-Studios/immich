@@ -636,7 +636,7 @@
 
               <!-- ALBUM SHARING -->
               {#if album.albumUsers.length > 0 || (album.hasSharedLink && isOwned)}
-                <div class="my-3 flex gap-x-1">
+                <div class="my-3 flex gap-x-1 overflow-x-scroll">
                   <!-- link -->
                   {#if album.hasSharedLink && isOwned}
                     <CircleIconButton
